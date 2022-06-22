@@ -3,6 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Catamaran", sans-serif; */
+  background-color: #efedee;
+}
 .btn-0 {
   width: 104px;
   height: 36px;
@@ -80,11 +90,6 @@
 .right-text p {
   font-size: 13px;
 }
-#cl {
-  background-color: #f7f7f7;
-  height: 400px;
-  width: 570px;
-}
 .grey {
   color: #757575;
   font-size: 14px;
@@ -98,4 +103,8 @@
   color: #fff;
   font-size: 13px;
   cursor: pointer;
+}
+#b-color {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
